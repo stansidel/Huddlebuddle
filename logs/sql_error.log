@@ -1,0 +1,56 @@
+[2011-09-23 20:14:03][13645][7989][ERROR][SQL Error: Access denied for user 'root'@'localhost' (using password: NO) at /var/www/sidelnikov/data/www/huddlebuddle.ssidelnikov.ru/engine/modules/database/Database.class.php line 66<br>
+Array
+(
+    [code] => 1045
+    [message] => Access denied for user 'root'@'localhost' (using password: NO)
+    [query] => mysql_connect()
+    [context] => /var/www/sidelnikov/data/www/huddlebuddle.ssidelnikov.ru/engine/modules/database/Database.class.php line 66
+)
+]
+[2011-09-30 19:55:52][2608][9951][ERROR][SQL Error: Table 'huddlebuddle.huddle_adminset' doesn't exist at Y:\home\localhost\www\plugins\aceadminpanel\classes\modules\admin\mapper\Admin.mapper.class.php line 32<br>
+Array
+(
+    [code] => 1146
+    [message] => Table 'huddlebuddle.huddle_adminset' doesn't exist
+    [query] => SELECT adminset_val FROM huddle_adminset WHERE adminset_key = 'version' 
+    [context] => Y:\home\localhost\www\plugins\aceadminpanel\classes\modules\admin\mapper\Admin.mapper.class.php line 32
+)
+]
+[2011-09-30 19:55:52][2608][9951][ERROR][SQL Error: Table 'huddlebuddle.huddle_topic' doesn't exist at Y:\home\localhost\www\classes\modules\topic\mapper\Topic.mapper.class.php line 198<br>
+Array
+(
+    [code] => 1146
+    [message] => Table 'huddlebuddle.huddle_topic' doesn't exist
+    [query] => SELECT 
+					count(t.topic_id) as count									
+				FROM 
+					huddle_topic as t,					
+					huddle_blog as b
+				WHERE 
+					1=1
+					
+					 AND t.topic_publish =  1 AND t.topic_date_add >=  '2011-09-29 19:00:00' AND ((b.blog_type='open'))								
+					
+					AND
+					t.blog_id=b.blog_id;
+    [context] => Y:\home\localhost\www\classes\modules\topic\mapper\Topic.mapper.class.php line 198
+)
+]
+[2011-11-14 10:52:41][26137][9314][ERROR][SQL Error: MySQL server has gone away at /var/www/sidelnikov/data/www/huddlebuddle.org/classes/modules/talk/mapper/Talk.mapper.class.php line 207<br>
+Array
+(
+    [code] => 2006
+    [message] => MySQL server has gone away
+    [query] => 
+					SELECT
+						SUM(tu.comment_count_new) as count_new												
+					FROM   						
+  						huddle_talk_user as tu
+					WHERE   						
+  						tu.user_id = 2  
+  						AND
+  						tu.talk_user_active=1							
+		
+    [context] => /var/www/sidelnikov/data/www/huddlebuddle.org/classes/modules/talk/mapper/Talk.mapper.class.php line 207
+)
+]

@@ -80,8 +80,29 @@
 .center { width: 400px; margin: 0 auto; }
 .center .input-text { border: 1px solid #ccc; width: 386px; padding: 4px 6px; font-size: 18px; font-family: Arial, sans-serif; }
 .center h2 { color: #888; }
-.center .button-login { float: right; padding-bottom: 7px; padding-left: 17px; padding-right: 17px; padding-top: 7px; font-size:18px; background-image: -o-linear-gradient(top, rgb(83, 220, 95) 0px, rgb(142, 237, 105) 100%); border-color: transparent;}
-.center .button-login:hover { background-image: -o-linear-gradient(top, rgb(142, 237, 105) 0px, rgb(83, 220, 95) 100%);}
+.center .button-login { 
+        float: right; 
+        padding-bottom: 7px; 
+        padding-left: 17px; 
+        padding-right: 17px; 
+        padding-top: 7px; 
+        font-size:18px; 
+        background: rgb(83, 220, 95);
+        border-color: transparent;
+	background: -moz-linear-gradient(top, rgba(83, 220, 95,1) 0%, rgba(142, 237, 105,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(83, 220, 95,1)), color-stop(100%,rgba(142, 237, 105,1)));
+	background: -webkit-linear-gradient(top, rgba(83, 220, 95,1) 0%,rgba(142, 237, 105,1) 100%);
+	background-image: -o-linear-gradient(top, rgb(83, 220, 95) 0px, rgb(142, 237, 105) 100%); 
+	background: -ms-linear-gradient(top, rgba(83, 220, 95,1) 0%,rgba(142, 237, 105,1) 100%);
+}
+.center .button-login:hover { 
+        background: rgb(83, 220, 95);
+	background: -moz-linear-gradient(top, rgba(142, 237, 105,1) 0%, rgba(83, 220, 95,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(142, 237, 105,1)), color-stop(100%,rgba(83, 220, 95,1)));
+	background: -webkit-linear-gradient(top, rgba(142, 237, 105,1) 0%,rgba(83, 220, 95,1) 100%);
+	background-image: -o-linear-gradient(top, rgb(142, 237, 105) 0px, rgb(83, 220, 95) 100%); 
+	background: -ms-linear-gradient(top, rgba(142, 237, 105,1) 0%,rgba(83, 220, 95,1) 100%);
+}
 
 .join { width: 10px; height: 10px; background: url(../images/icons.gif) no-repeat 0 -250px; cursor: pointer; }
 .join.active { background-position: -10px -250px; }

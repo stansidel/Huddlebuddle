@@ -50,9 +50,12 @@
 {hook run='body_begin'}
 <div id="container">
 	<div id="header-light">
-		<a href="{cfg name='path.root.web'}" class="logo"><img src="{cfg name='path.static.skin'}/images/HB.png" alt="HuddleBuddle"></a>
+            {if $oConfig->GetValue('general.close')}
+		<a href="{cfg name='path.root.web'}" class="logo"><img src="{cfg name='path.static.skin'}/images/HB-login-closed.png" alt="HuddleBuddle"></a>
+            {else}
+                <a href="{cfg name='path.root.web'}" class="logo"><img src="{cfg name='path.static.skin'}/images/HB-login.png" alt="HuddleBuddle"></a>
+            {/if}
 		</div>
-	
 	{if !$noShowSystemMessage}
 		{include file='system_message.tpl'}
 	{/if}

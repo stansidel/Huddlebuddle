@@ -1,0 +1,7 @@
+/nbproject/private/
+/templates/cache/
+/templates/compiled/
+/logs/
+/tmp/
+/uploads/
+config.server.php

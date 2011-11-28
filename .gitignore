@@ -1,9 +1,9 @@
 /nbproject/private/
-/templates/cache/
-/templates/compiled/
-/logs/
-/tmp/
-/uploads/
+/templates/cache/*
+/templates/compiled/*
+/logs/*
+/tmp/*
+/uploads/*
 *config.server.php
-/nbproject/
+/nbproject/*
 /config/server/

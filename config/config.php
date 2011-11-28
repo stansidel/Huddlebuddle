@@ -323,7 +323,7 @@ $config['memcache']['compression'] = true;
  * Настройки роутинга
  */
 $config['router']['rewrite'] = array(
-    'page' => 'help'
+    'page' => 'info'
 );
 // Правила реврайта для REQUEST_URI
 $config['router']['uri'] = array(

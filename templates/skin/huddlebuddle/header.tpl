@@ -81,7 +81,7 @@
         (function(w, c) {
             (w[c] = w[c] || []).push(function() {
                 try {
-                    var yaParams = {'Логин': '{/literal}{if $oUserCurrent}{$oUserCurrent->getLogin()}{else}Гость{/if}{literal}'};
+var yaParams = {'Логин': '{/literal}{if $oUserCurrent}{$oUserCurrent->getLogin()}{else}Гость{/if}{literal}'};
                     w.yaCounter10183702 = new Ya.Metrika({id:10183702, params: yaParams, enableAll: true});
                 }
                 catch(e) { }

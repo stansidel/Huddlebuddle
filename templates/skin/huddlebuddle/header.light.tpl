@@ -19,6 +19,11 @@
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-24182259-3']);
           _gaq.push(['_trackPageview']);
+          _gaq.push(['_setCustomVar',
+                           1,
+                           'User',
+                           'Login',
+                           1]);
 
           (function() {
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
@@ -38,7 +43,8 @@
         (function(w, c) {
             (w[c] = w[c] || []).push(function() {
                 try {
-                    w.yaCounter10183702 = new Ya.Metrika({id:10183702, enableAll: true});
+                    var yaParams = {'Логин': '{/literal}{if $oUserCurrent}{$oUserCurrent->getLogin()}{else}Гость{/if}{literal}'};
+                    w.yaCounter10183702 = new Ya.Metrika({id:10183702, params: yaParams, enableAll: true});
                 }
                 catch(e) { }
             });

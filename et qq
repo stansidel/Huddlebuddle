@@ -1,0 +1,97 @@
+commit e1acffe8bbfd94596374d5089e4aacb7b4a805ea
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Mon Nov 28 18:03:00 2011 +0400
+
+    Config fixed
+
+commit c3402e5377da1644ff03e48dffc74f57ac938044
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Mon Nov 28 13:57:35 2011 +0600
+
+    Pages url changed to 'help'
+
+commit 3a452f23e731a41fcbdd574dbe9c69478c92bdcb
+Merge: ee22c0f... b3ff76d...
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Mon Nov 28 11:24:31 2011 +0400
+
+    Merge branch 'master' of git@github.com:ssidelnikov/Huddlebuddle
+
+commit b3ff76d0af88dee036f0c370169301acee8813c1
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Mon Nov 28 13:14:42 2011 +0600
+
+    Gitignore checked
+
+commit ee22c0fab2d7f9aec186fea621b88e7ba9d66ac1
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Mon Nov 28 10:07:20 2011 +0400
+
+    Reset all from the server
+
+commit 62e51d7552262c02d02d8258ed364970aa812b0f
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Mon Nov 28 09:10:15 2011 +0600
+
+    Count for loggins page visits added
+
+commit 4e622738658c739ff7496a12a3d560dcf97ae684
+Merge: c3be109... 2ccb002...
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Mon Nov 28 09:05:57 2011 +0600
+
+    s
+
+commit 2ccb00235253ce282d91021c0fbe9e10c7e5284a
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Sat Nov 26 23:09:52 2011 +0600
+
+    c
+
+commit 4bc20a3a42fcc96d2b38694efd5c4b02ed4a56e6
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Sat Nov 26 23:02:55 2011 +0600
+
+    Modules dir in language templates added
+
+commit c3be10941650ac53cdc2954ec241509120380312
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Fri Nov 25 16:22:12 2011 +0600
+
+    Image changed
+
+commit 2c09d81ae487edf4e6216c54bdbcf42360dbc7be
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Fri Nov 25 15:05:41 2011 +0500
+
+    Removed text shadow
+
+commit f19ac83474c44bd34c105a1a2c886d21bf55f36e
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Fri Nov 25 15:03:00 2011 +0500
+
+    Added browser compatibility
+
+commit eed6b4b8b2c3e952042076b90da53e5f82c2682f
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Fri Nov 25 14:53:36 2011 +0500
+
+    Final login image (closed site)
+
+commit 570c8d49e093a1e9e2bf65509bf68ebea709b8a8
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Fri Nov 25 12:39:29 2011 +0500
+
+    Changed login image
+
+commit 2386513f8860aee69c53153dbf1efd6ed2f46c62
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Fri Nov 25 08:00:54 2011 +0400
+
+    Added README
+
+commit 00419495868a173f761b59c6a3c7b9fc5dd6e3eb
+Author: Stan <ssidelnikov@gloss-it.ru>
+Date:   Fri Nov 25 07:30:07 2011 +0400
+
+    first commit

@@ -320,7 +320,7 @@ $config['memcache']['servers'][0]['port'] = '11211';
 $config['memcache']['servers'][0]['persistent'] = true;
 $config['memcache']['compression'] = true;
 /**
- * Настройки роутинга
+ * Настройки роутинга e
  */
 $config['router']['rewrite'] = array(
     'page' => 'info'

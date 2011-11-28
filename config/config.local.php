@@ -19,7 +19,7 @@
  * Для использования - переименовать файл в config.local.php
  */
 
-include("config.server.php");
+include("server/config.server.php");
  
 $config['view']['name'] = 'Huddlebuddle';
 $config['view']['description'] = 'IT-crowd huddle place';

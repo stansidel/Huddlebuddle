@@ -4,4 +4,6 @@
 /logs/
 /tmp/
 /uploads/
-config.server.php
+*config.server.php
+/nbproject/
+/config/server/

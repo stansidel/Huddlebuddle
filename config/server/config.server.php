@@ -14,21 +14,22 @@
 *
 ---------------------------------------------------------
 */
-/**
- * Настройки для локального сервера.
- * Для использования - переименовать файл в config.local.php
- */
 
 /**
  * Настройка базы данных
  */
 $config['db']['params']['host'] = 'localhost';
 $config['db']['params']['port'] = '3306';
-$config['db']['params']['user'] = 'root';
-$config['db']['params']['pass'] = '';
+$config['db']['params']['user'] = 'huddle';
+$config['db']['params']['pass'] = 'V86cc1Ht';
 $config['db']['params']['type']   = 'mysql';
-$config['db']['params']['dbname'] = 'social';
-$config['db']['table']['prefix'] = 'prefix_';
+$config['db']['params']['dbname'] = 'huddlebuddle';
+$config['db']['table']['prefix'] = 'huddle_';
 
-return $config;
+//$config['path']['root']['web'] = 'http://alpha.huddlebuddle.org';
+//$config['path']['root']['server'] = '/var/www/alpha.huddlebuddle.org';
+$config['path']['root']['web'] = 'http://localhost:8080';
+$config['path']['root']['server'] = 'Y:\home\localhost\www';
+$config['path']['offset_request_url'] = '0';
+$config['db']['tables']['engine'] = 'InnoDB';
 ?>

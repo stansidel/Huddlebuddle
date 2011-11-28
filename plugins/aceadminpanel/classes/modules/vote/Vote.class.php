@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php
+=======
+<?php
+>>>>>>> 2ccb00235253ce282d91021c0fbe9e10c7e5284a
 /*---------------------------------------------------------------------------
  * @Plugin Name: aceAdminPanel
  * @Plugin Id: aceadminpanel
@@ -11,6 +15,7 @@
  * @File Name: Vote.class.php
  * @License: GNU GPL v2, http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *----------------------------------------------------------------------------
+<<<<<<< HEAD
  */
 
 class PluginAceadminpanel_ModuleVote extends PluginAceadminpanel_Inherit_ModuleVote {
@@ -29,4 +34,24 @@ class PluginAceadminpanel_ModuleVote extends PluginAceadminpanel_Inherit_ModuleV
     }
 }
 
+=======
+ */
+
+class PluginAceadminpanel_ModuleVote extends PluginAceadminpanel_Inherit_ModuleVote {
+
+    public function Init() {
+        $this->oMapper = HelperPlugin::GetMapper();
+    }
+
+    public function UpdateVote($oVote) {
+        if ($this->oMapper->UpdateVote($oVote)) {
+            $this->Cache_Delete("vote_{$oVote->getTargetType()}_{$oVote->getTargetId()}_{$oVote->getVoterId()}");
+            $this->Cache_Clean(Zend_Cache::CLEANING_MODE_MATCHING_TAG,array("vote_update_{$oVote->getTargetType()}_{$oVote->getVoterId()}"));
+            return true;
+        }
+        return false;
+    }
+}
+
+>>>>>>> 2ccb00235253ce282d91021c0fbe9e10c7e5284a
 // EOF

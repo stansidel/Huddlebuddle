@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php
+=======
+<?php
+>>>>>>> 2ccb00235253ce282d91021c0fbe9e10c7e5284a
 /*---------------------------------------------------------------------------
  * @Plugin Name: aceAdminPanel
  * @Plugin Id: aceadminpanel
@@ -11,6 +15,7 @@
  * @File Name: Notify.class.php
  * @License: GNU GPL v2, http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *----------------------------------------------------------------------------
+<<<<<<< HEAD
  */
 
 class PluginAceadminpanel_ModuleNotify extends PluginAceadminpanel_Inherit_ModuleNotify
@@ -30,4 +35,25 @@ class PluginAceadminpanel_ModuleNotify extends PluginAceadminpanel_Inherit_Modul
     }
 }
 
+=======
+ */
+
+class PluginAceadminpanel_ModuleNotify extends PluginAceadminpanel_Inherit_ModuleNotify
+{
+    private $sPlugin = 'aceadminpanel';
+
+    public function GetTemplatePath($sName, $sPluginName = null)
+    {
+        if (!$sPluginName) {
+            $sLangDir = 'notify/' . $this->Lang_GetLang();
+            $sDir = admUrl2Path(rtrim(Config::Get($this->sPlugin . '.saved.path.static.skin'), '/') . '/' . $sLangDir);
+            if (is_dir($sDir)) {
+                return $sDir . '/' . $sName;
+            }
+            return parent::GetTemplatePath($sName, $sPluginName);
+        }
+    }
+}
+
+>>>>>>> 2ccb00235253ce282d91021c0fbe9e10c7e5284a
 // EOF

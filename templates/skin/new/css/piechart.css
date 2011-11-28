@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .pieChartContainer {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
@@ -19,4 +20,27 @@
 	
 .clear {
 	clear: both;
+=======
+.pieChartContainer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	padding:20px 0 0 15px;
+}
+
+.pieChartWrapper {
+	float: left;
+	position: relative;
+	padding-right: 12px;
+}
+	
+.pieChartWrapper img {
+	position: absolute;
+	top: 0;
+	left: 0;			
+}
+	
+.clear {
+	clear: both;
+>>>>>>> 2ccb00235253ce282d91021c0fbe9e10c7e5284a
 }

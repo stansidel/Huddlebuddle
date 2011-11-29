@@ -388,7 +388,7 @@ $config['block']['rule_pages_list'] = array(
     ),
     'action' => array(),
     'blocks' => array(
-        'right' => array('pageslist'=>array('prioriy'=>100))
+        'right' => array('PagesList'=>array('prioriy'=>100))
     ),
     'clear' => false,
 );

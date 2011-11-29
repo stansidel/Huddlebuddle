@@ -382,6 +382,17 @@ $config['block']['rule_index_blog'] = array(
 	'clear' => false,
 );
 
+$config['block']['rule_pages_list'] = array(
+    'path' => array(
+        '___path.root.web___/info/help/*$'
+    ),
+    'action' => array(),
+    'blocks' => array(
+        'right' => array('pageslist'=>array('prioriy'=>100))
+    ),
+    'clear' => false,
+);
+
 $config['block']['rule_topic_type'] = array(
 	'action'  => array(
 		'link'     => array('add','edit'),

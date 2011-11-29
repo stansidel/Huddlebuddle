@@ -75,6 +75,7 @@ class PluginPage_ActionPage extends ActionPlugin {
 		}
 		
 		$this->Viewer_Assign('oPage',$oPage);
+                $this->Viewer_Assign('oParentPage',$this->PluginPage_Page_GetPageById($oPage->getPid()));
 		/**
 		 * Устанавливаем шаблон для вывода
 		 */		

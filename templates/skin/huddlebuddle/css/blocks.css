@@ -70,3 +70,19 @@
 .block.stream-settings .stream-settings-userlist p a { border-bottom: 1px dashed #70AAE0; text-decoration: none; }
 .block.stream-settings .stream-settings-userlist p a:hover { color: #555; border-color: #555; }
 .block.stream-settings .stream-settings-userlist li { padding-bottom: 5px; }
+
+.block.pages-list ul {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+.block.pages-list a { 
+    font-size: 1.3em; 
+    padding: 4px 4px;
+}
+.block.pages-list li { padding: 4px 0; }
+.block.pages-list li.active a {
+    background: none repeat scroll 0 0 #badae0;
+    color: #333;
+    text-decoration: none;
+}

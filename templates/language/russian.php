@@ -687,6 +687,8 @@ return array(
 	'block_friends_check' => 'Отметить всех',
 	'block_friends_uncheck' => 'Снять отметку',
 	'block_friends_empty' => 'Список ваших друзей пуст',
+    
+        'block_pageslist' => 'Справочный раздел',
 
 	'site_history_back' => 'Вернуться назад',
 	'site_go_main' => 'перейти на главную',

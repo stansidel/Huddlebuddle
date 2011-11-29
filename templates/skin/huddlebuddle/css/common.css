@@ -132,3 +132,16 @@
 
 .right { float: right; }
 span.green { color: #008000; }
+
+.help h1 {
+    font: 2em/100% Verdana,sans-serif;
+    margin-bottom: 0.7em;
+}
+
+.help h2 {
+clear: left;
+color: #53DC5F;
+font-size: 23px;
+font-weight: normal;
+padding-top: 0.5em;
+}

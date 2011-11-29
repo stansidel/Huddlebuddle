@@ -687,6 +687,8 @@ return array(
 	'block_friends_check' => 'Check all',
 	'block_friends_uncheck' => 'Uncheck',
 	'block_friends_empty' => 'Empty friends list',
+    
+        'block_pageslist' => 'Help section',
 	
 	'site_history_back' => 'Go back',
 	'site_go_main' => 'Go to the main page',

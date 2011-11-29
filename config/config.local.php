@@ -47,6 +47,7 @@ $config['module']['topic']['user_block_comments'] = false;       // Пользо
  */
 $config['block']['stream']['row'] = 20;  // сколько записей выводить в блоке "Прямой эфир"
 $config['block']['blogs']['row']  = 10;  // сколько записей выводить в блоке "Блоги"
+$config['block']['pageslist']['pid'] = 3;   // какие страницы выводить в блоке "Список страниц"
 
 /**
  * Настройки ACL(Access Control List — список контроля доступа)

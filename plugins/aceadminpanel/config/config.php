@@ -98,7 +98,8 @@ $config['autoloader_yii'] = true;
 /***
  * Скин админпанели
  */
-$config['skin'] = 'default';
+//$config['skin'] = 'default';
+$config['skin'] = 'huddlebuddle';
 
 return $config;
 

@@ -77,11 +77,14 @@
 <body onload="prettyPrint()">
         {literal}
         <!-- Yandex.Metrika counter -->
-        <div style="display:none;"><script type="text/javascript">
+        <div style="display:none;">
+        <script type="text/javascript">    
+            var yaParams = {'Логин': '{/literal}{if $oUserCurrent}{$oUserCurrent->getLogin()}{else}Гость{/if}{literal}'};
+        </script>
+        <script type="text/javascript">
         (function(w, c) {
             (w[c] = w[c] || []).push(function() {
                 try {
-var yaParams = {'Логин': '{/literal}{if $oUserCurrent}{$oUserCurrent->getLogin()}{else}Гость{/if}{literal}'};
                     w.yaCounter10183702 = new Ya.Metrika({id:10183702, params: yaParams, enableAll: true});
                 }
                 catch(e) { }

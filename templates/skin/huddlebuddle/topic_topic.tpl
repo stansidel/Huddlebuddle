@@ -66,7 +66,7 @@
 			<a href="#" class="minus" onclick="return ls.vote.vote({$oTopic->getId()},this,-1,'topic');"></a>
 		</li>
 		<li class="date">{date_format date=$oTopic->getDateAdd()}</li>
-		{if $oTopic->getSource()}<li class="source"><a href="{$oTopic->getSource()}">{if $oTopic->getSource()}{$oTopic->getSourceAuthor()}{else}{$oTopic->getSource()}{/if}</a></li>{/if}
+		{if $oTopic->getSource()}<li class="source"><a href="{$oTopic->getSource()}" target="_blank">{if $oTopic->getSource()}{$oTopic->getSourceAuthor()}{else}{$oTopic->getSource()}{/if}</a></li>{/if}
 		<li class="username">{include file="topic_author.tpl"}</li>
 		{if $bTopicList}
 			<li class="comments-link">

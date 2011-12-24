@@ -35,7 +35,7 @@
 .topic .info li.date { color: #999; font-size: 11px; }
 .topic .info li.username a { font-weight: bold; background: url(../images/icons.gif) no-repeat 0 -106px; padding-left: 13px; }
 .topic .info li.username a:hover { text-decoration: underline; }
-.topic .info li.source a { font-weight: bold; background: url(../images/bg-author-link.gif) no-repeat; background-position-y: 50%; padding-left: 13px; }
+.topic .info li.source a { font-weight: bold; background: url(../images/bg-author-link.gif) no-repeat; background-position-y: 50%; padding-left: 13px; padding-right: 0px; }
 .topic .info li.source a:hover { text-decoration: underline; }
 .topic .info li.voting { padding-right: 15px; }
 .topic .info li.comments-link a { color: #f00; font-size: 11px; }

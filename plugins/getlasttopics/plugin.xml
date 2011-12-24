@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>
+		<lang name="default">Get new topics</lang>
+	</name>
+	<author>
+		<lang name="default">PSNet</lang>
+	</author>
+	<homepage>http://psnet.lookformp3.net/</homepage>
+	<version>1.0.1</version>
+	<requires>
+		<livestreet>0.4.2</livestreet>
+		<plugins></plugins>
+	</requires>
+	<description>
+    <lang name="default">Adds new topics on login screen if closed site mode is enabled.</lang>
+		<lang name="russian">Если включен закрытый режим работы сайта, на страницу авторизации добавляет список новых топиков.</lang>
+	</description>
+</plugin>

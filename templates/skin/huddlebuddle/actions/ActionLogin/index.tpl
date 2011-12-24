@@ -24,10 +24,9 @@
 
 		{hook run='form_login_end'}
 	</form>
-
-
+        
 	{if $oConfig->GetValue('general.reg.invite')}
-		<br /><br />
+		<br />
 		<form action="{router page='registration'}invite/" method="POST">
 			<h2>{$aLang.registration_invite}</h2>
 
@@ -36,6 +35,8 @@
 			<input type="submit" name="submit_invite" class="button" value="{$aLang.registration_invite_check}" />
 		</form>
 	{/if}
+        
+        {hook run='login_page_end'}
 </div>
 
 

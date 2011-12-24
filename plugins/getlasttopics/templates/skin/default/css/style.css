@@ -1,0 +1,27 @@
+/*
+  Getlasttopics plugin
+  (P) PSNet, 2008 - 2011
+  http://psnet.lookformp3.net/
+*/
+
+div.NewTopicsContainer {
+  background: #FAFAFA;
+  border: 1px solid #EEEEEE;
+  padding: 5px 10px;
+  margin: 15px 0px;
+}
+
+div.NewTopicsContainer h1 {
+  color: #AAAAAA;
+  font-size: 18px;
+}
+
+div.NewTopicsContainer div.OneNewTopic {
+  padding: 0 5px 2px;
+}
+
+div.NewTopicsContainer div.OneNewTopic.second {
+  background: #EEEEEE;
+}
+
+div.NewTopicsContainer div.OneNewTopic a {}

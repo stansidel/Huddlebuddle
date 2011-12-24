@@ -2,33 +2,33 @@
 <img src="{$sFacebookTemplateWebPathPlugin}images/facebook.jpg" alt="Facebook" align="right">
 {if $bEditMode && $bPublished}
     {* сюда попадают при редактировании уже опубликованного в FB топика *}
-    <p><strong>Этот топик опубликован в Facebook</strong></p>
+    <p><strong>{$aLang.post_published}</strong></p>
     {if $oUserCurrent and $oUserCurrent->isAdministrator()}
-        <p><label for="topic_delete_facebook"><input type="checkbox" value="1" class="checkbox" name="topic_delete_facebook" id="topic_delete_facebook"> &mdash; удалить из Facebook</label><br>
-        <span class="form_note">Если отметить эту галку, то анонс топика будет удален со страницы в Facebook (опция доступна только администраторам)</span></p>
+        <p><label for="topic_delete_facebook"><input type="checkbox" value="1" class="checkbox" name="topic_delete_facebook" id="topic_delete_facebook"> &mdash; {$aLang.remove_from_fb}</label><br>
+        <span class="form_note">{$aLang.remove_from_fb_note}</span></p>
     {/if}
 {elseif !$bPublishBlocked}
     {* сюда попадают при редактировании неопубликованного в FB топика, который не заблокирован от публикации *}
     {if $oUserCurrent and $oUserCurrent->isAdministrator()}
-    <p><label for="topic_publish_facebook"><input type="checkbox" value="1" class="checkbox" name="topic_publish_facebook" id="topic_publish_facebook"> &mdash; опубликовать в Facebook</label><br>
-    <span class="form_note">Если отметить эту галку, то анонс топика будет опубликован в Facebook (опция доступна только администраторам)</span></p>
+    <p><label for="topic_publish_facebook"><input type="checkbox" value="1" class="checkbox" name="topic_publish_facebook" id="topic_publish_facebook"> &mdash; {$aLang.publish}</label><br>
+    <span class="form_note">{$aLang.publish_note}</span></p>
     {else}
         {* сообщение для обычных пользователей *}
         {if $aPluginConfig.strategy=='STRATEGY_MAIN'}
-            <p>Если этот топик попадет на главную страницу, анонс на него будет добавлен на <a href="{$aPluginConfig.page.url}" target="_blank">страничку нашего сайта в Facebook</a></p>
+            <p>{$aLang.published_note_part1} <a href="{$aPluginConfig.page.url}" target="_blank">{$aLang.published_note_part2}</a></p>
         {elseif $aPluginConfig.strategy=='STRATEGY_RATING'}
-            <p>Если за этот топик {$aPluginConfig.STRATEGY_RATING.rating|declension:'проголосует;проголосуют;проголосуют':'ru'} {$aPluginConfig.STRATEGY_RATING.rating} {$aPluginConfig.STRATEGY_RATING.rating|declension:'человек;человека;человек':'ru'}, анос на него будет добавлен на <a href="{$aPluginConfig.page.url}" target="_blank">страничку нашего сайта в Facebook</a></p>
+            <p>{$aLang.published_condition_part1} {$aPluginConfig.STRATEGY_RATING.rating} {$aPluginConfig.STRATEGY_RATING.rating|declension:$aLang.published_condition_part2:Config::Get('lang.current')} {$aPluginConfig.STRATEGY_RATING.rating|declension:$aLang.published_condition_part3:Config::Get('lang.current')} {$aLang.published_condition_part4} {$aLang.published_condition_part5} <a href="{$aPluginConfig.page.url}" target="_blank">{$aLang.published_condition_part6}</a></p>
         {/if}
     {/if}
 {/if}
 
 {if !$bPublished && $oUserCurrent and $oUserCurrent->isAdministrator()}
     {if $bPublishBlocked}
-    <p><label for="topic_allow_facebook"><input type="checkbox" value="1" class="checkbox" name="topic_allow_facebook" id="topic_allow_facebook"> &mdash; разрешить добавление в Facebook</label><br>
-    <span class="form_note">Если отметить эту галку, то анонс топика будет опубликован в Facebook при выполнении условий добавления (опция доступна только администраторам)</span></p>
+    <p><label for="topic_allow_facebook"><input type="checkbox" value="1" class="checkbox" name="topic_allow_facebook" id="topic_allow_facebook"> &mdash; {$aLang.enable_publishing}</label><br>
+    <span class="form_note">{$aLang.enable_publishing_note}</span></p>
     {else}
-    <p><label for="topic_deny_facebook"><input type="checkbox" value="1" class="checkbox" name="topic_deny_facebook" id="topic_deny_facebook"> &mdash; заблокировать добавление в Facebook</label><br>
-    <span class="form_note">Если отметить эту галку, то анонс топика не попадет в Facebook при выполнении условий добавления (опция доступна только администраторам)</span></p>
+    <p><label for="topic_deny_facebook"><input type="checkbox" value="1" class="checkbox" name="topic_deny_facebook" id="topic_deny_facebook"> &mdash; {$aLang.block_publishing}</label><br>
+    <span class="form_note">{$aLang.block_publishing_note}</span></p>
     {/if}
 {/if}
 </div>

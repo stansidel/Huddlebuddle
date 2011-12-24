@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <name>
+        <lang name="default">External Links</lang>
+    </name>
+    <author>
+        <lang name="default">Stanislav Sidelnikov</lang>
+    </author>
+    <homepage>http://www.ssidelnikov.ru/</homepage>
+    <version>0.1</version>
+    <requires>
+        <livestreet>0.5</livestreet>
+        <plugins></plugins>
+    </requires>
+    <description>
+        <lang name="default">Make all links to external resources open in new tabs.</lang>
+    </description>
+</plugin>

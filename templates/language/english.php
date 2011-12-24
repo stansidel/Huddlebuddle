@@ -491,7 +491,7 @@ return array(
 	 */
 	'user_vote_up' => 'Like',
 	'user_vote_down' => 'Don\'t like',	
-	'user_vote_error_already' => 'You\'ve already voted for this yser!',
+	'user_vote_error_already' => 'You\'ve already voted for this user!',
 	'user_vote_error_self' => 'You can\'t vote for yourself!',
 	'user_vote_error_guest' => 'You have to logon before voting',	
 	'user_vote_error_acl' => 'You don\'t have enough rating and power to vote!',	

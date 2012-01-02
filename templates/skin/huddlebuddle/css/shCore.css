@@ -56,8 +56,13 @@
   width: 100% !important;
   margin: 1em 0 1em 0 !important;
   position: relative !important;
-  overflow: auto !important;
+  /*overflow: auto !important;
+  overflow-y: hidden !important;*/
   font-size: 1em !important;
+}
+.syntaxhighlighter .codecontent {
+  overflow: auto !important;
+  overflow-y: hidden !important;
 }
 .syntaxhighlighter.source {
   overflow: hidden !important;
@@ -122,29 +127,49 @@
 }
 .syntaxhighlighter.collapsed .toolbar span {
   display: inline !important;
-  margin-right: 1em !important;
+  /*margin-right: 1em !important;*/
+}
+.syntaxhighlighter.collapsed span.delimeter {
+  display: none !important;
 }
 .syntaxhighlighter.collapsed .toolbar span a {
+  padding: 0 !important;
+  display: none !important;
+}
+.syntaxhighlighter.collapsed .toolbar span {
   padding: 0 !important;
   display: none !important;
 }
 .syntaxhighlighter.collapsed .toolbar span a.expandSource {
   display: inline !important;
 }
+.syntaxhighlighter.collapsed .toolbar span.expandSource {
+  display: inline !important;
+}
 .syntaxhighlighter .toolbar {
-  position: absolute !important;
+  /*position: absolute !important;*/
   right: 1px !important;
   top: 1px !important;
-  width: 11px !important;
-  height: 11px !important;
+  /*width: 11px !important;
+  height: 11px !important;*/
   font-size: 10px !important;
   z-index: 10 !important;
+}
+.syntaxhighlighter .toolbar div {
+    text-align: right !important;
+}
+.syntaxhighlighter .clear {
+    clear: both;
 }
 .syntaxhighlighter .toolbar span.title {
   display: inline !important;
 }
+.syntaxhighlighter .toolbar span {
+  margin-left: 10px;
+}
+
 .syntaxhighlighter .toolbar a {
-  display: block !important;
+  /*display: block !important;*/
   text-align: center !important;
   text-decoration: none !important;
   padding-top: 1px !important;

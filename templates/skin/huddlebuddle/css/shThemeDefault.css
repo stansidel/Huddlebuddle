@@ -49,26 +49,28 @@
   overflow: visible !important;
 }
 .syntaxhighlighter.collapsed .toolbar {
-  color: blue !important;
+  /*color: blue !important;*/
   background: white !important;
-  border: 1px solid #6ce26c !important;
+  /*border: 1px solid #6ce26c !important;*/
+  border: 1px solid #83DC5F !important;
 }
 .syntaxhighlighter.collapsed .toolbar a {
-  color: blue !important;
+  color: #999 !important;
 }
 .syntaxhighlighter.collapsed .toolbar a:hover {
-  color: red !important;
+  color: #666 !important;
 }
 .syntaxhighlighter .toolbar {
-  color: white !important;
-  background: #6ce26c !important;
-  border: none !important;
+  color: #999 !important;
+  /*background: #6ce26c !important;
+  border: none !important;*/
+  border-bottom: #83DC5F solid 1px !important;
 }
 .syntaxhighlighter .toolbar a {
-  color: white !important;
+  color: #999 !important;
 }
 .syntaxhighlighter .toolbar a:hover {
-  color: black !important;
+  color: #666 !important;
 }
 .syntaxhighlighter .plain, .syntaxhighlighter .plain a {
   color: black !important;

@@ -502,6 +502,7 @@ $config['head']['default']['js']  = array(
 	"___path.static.skin___/js/stream.js",
 	"___path.static.skin___/js/photoset.js",
 	"___path.static.skin___/js/markup_settings.js",
+        "___path.static.skin___/js/xregexp.js",
 	"___path.static.skin___/js/shCore.js",
 	"___path.static.skin___/js/shAutoloader.js",
 );

@@ -116,11 +116,11 @@ class ModuleText extends Module {
 		/**
 		 * youtube.com
 		 */		
-		$sText = preg_replace('/<video>http:\/\/(?:www\.|)youtube\.com\/watch\?v=([a-zA-Z0-9_\-]+)(&.+)?<\/video>/Ui', '<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/$1&hl=en"></param><param name="wmode" value="opaque"></param><embed src="http://www.youtube.com/v/$1&hl=en" type="application/x-shockwave-flash" wmode="opaque" width="425" height="344"></embed></object>', $sText);		
+		$sText = preg_replace('~<video>http://(?:www\.|)?youtube.com/watch?(.*?)(v=)([a-zA-Z0-9_-]+)(.*?)</video>~usi', '<object width="560" height="349"><param name="movie" value="http://www.youtube.com/v/$3&version=3&feature=player_detailpage&hl=en"></param><param name="wmode" value="opaque"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/$3&version=3&feature=player_detailpage&hl=en" type="application/x-shockwave-flash" allowfullscreen="true" wmode="opaque" width="560" height="349"></embed></object>', $sText);		
 		/**
 		 * rutube.ru
 		 */		
-		$sText = preg_replace('/<video>http:\/\/(?:www\.|)rutube.ru\/tracks\/\d+.html\?v=([a-zA-Z0-9_\-]+)(&.+)?<\/video>/Ui', '<OBJECT width="470" height="353"><PARAM name="movie" value="http://video.rutube.ru/$1"></PARAM><PARAM name="wmode" value="opaque"></PARAM><PARAM name="allowFullScreen" value="true"></PARAM><PARAM name="flashVars" value="uid=662118"></PARAM><EMBED src="http://video.rutube.ru/$1" type="application/x-shockwave-flash" wmode="opaque" width="470" height="353" allowFullScreen="true" flashVars="uid=662118"></EMBED></OBJECT>', $sText);				
+		$sText = preg_replace('/<video>http:\/\/(?:www\.|)rutube.ru\/tracks\/\d+.html\?v=([a-zA-Z0-9_\-]+)(&.+)?<\/video>/Ui', '<OBJECT width="560" height="349"><PARAM name="movie" value="http://video.rutube.ru/$1"></PARAM><PARAM name="wmode" value="opaque"></PARAM><PARAM name="allowFullScreen" value="true"></PARAM><PARAM name="flashVars" value="uid=662118"></PARAM><EMBED src="http://video.rutube.ru/$1" type="application/x-shockwave-flash" wmode="opaque" width="560" height="349" allowFullScreen="true" flashVars="uid=662118"></EMBED></OBJECT>', $sText);				
 		return $sText;
 	}
 		

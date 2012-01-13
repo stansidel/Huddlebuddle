@@ -46,7 +46,7 @@
         (function(w, c) {
             (w[c] = w[c] || []).push(function() {
                 try {
-                    w.yaCounter10183702 = new Ya.Metrika({id:10183702, params: yaParams, enableAll: true});
+                    w.yaCounter10183702 = new Ya.Metrika({id:10183702, params: yaParams, enableAll: true, webvisor:true});
                 }
                 catch(e) { }
             });

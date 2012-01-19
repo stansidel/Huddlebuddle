@@ -569,7 +569,8 @@ class ActionTalk extends Action {
 		$oCommentNew->setUserIp(func_getIp());
 		$oCommentNew->setPid($sParentId);
 		$oCommentNew->setTextHash(md5($sText));
-			
+                $oCommentNew->setPublished(1);
+		
 		/**
 		* Добавляем коммент
 		*/

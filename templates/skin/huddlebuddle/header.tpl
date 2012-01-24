@@ -74,7 +74,7 @@
 </head>
 
 
-<body onload="prettyPrint()">
+<body>
         {literal}
         <!-- Yandex.Metrika counter -->
         <div style="display:none;">

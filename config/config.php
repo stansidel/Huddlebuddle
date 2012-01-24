@@ -488,7 +488,7 @@ $config['head']['default']['js']  = array(
 	"___path.root.engine_lib___/external/jquery/jquery.jqplugin.js",
 	"___path.root.engine_lib___/external/jquery/jquery.cookie.js",
 	"___path.root.engine_lib___/external/jquery/jquery.serializejson.js",
-	"___path.root.engine_lib___/external/prettify/prettify.js",
+	//"___path.root.engine_lib___/external/prettify/prettify.js",
 	"___path.static.skin___/js/main.js",
 	"___path.static.skin___/js/favourite.js",
 	"___path.static.skin___/js/blocks.js",
@@ -510,7 +510,7 @@ $config['head']['default']['css'] = array(
 	"___path.static.skin___/css/reset.css",
 	"___path.root.engine_lib___/external/jquery/markitup/skins/simple/style.css",
 	"___path.root.engine_lib___/external/jquery/markitup/sets/default/style.css",	
-	"___path.root.engine_lib___/external/prettify/prettify.css",
+	//"___path.root.engine_lib___/external/prettify/prettify.css",
 	"___path.static.skin___/css/main.css",
 	"___path.static.skin___/css/grid.css",
 	"___path.static.skin___/css/common.css",
@@ -540,8 +540,8 @@ $config['compress']['css']['template']            = "highest_compression";
 /**
  * Параметры компрессии js-файлов
  */
-$config['compress']['js']['merge']  = false;    // указывает на необходимость слияния файлов по указанным блокам.
-$config['compress']['js']['use']    = false;    // указывает на необходимость компрессии файлов. Компрессия используется только в активированном режиме слияния файлов.
+$config['compress']['js']['merge']  = true;    // указывает на необходимость слияния файлов по указанным блокам.
+$config['compress']['js']['use']    = true;    // указывает на необходимость компрессии файлов. Компрессия используется только в активированном режиме слияния файлов.
 
 /**
  * Установка локали

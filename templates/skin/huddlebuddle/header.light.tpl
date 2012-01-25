@@ -38,23 +38,23 @@
 <body>
 {literal}
 <!-- Yandex.Metrika counter -->
-        <div style="display:none;">
         <script type="text/javascript">    
             var yaParams = {'Логин': '{/literal}{if $oUserCurrent}{$oUserCurrent->getLogin()}{else}Гость{/if}{literal}'};
         </script>
-        <script type="text/javascript">
-        (function(w, c) {
-            (w[c] = w[c] || []).push(function() {
-                try {
-                    w.yaCounter10183702 = new Ya.Metrika({id:10183702, params: yaParams, enableAll: true, webvisor:true});
-                }
-                catch(e) { }
-            });
-        })(window, "yandex_metrika_callbacks");
-        </script></div>
-        <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
-        <noscript><div><img src="//mc.yandex.ru/watch/10183702" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-        <!-- /Yandex.Metrika counter -->
+
+<div style="display:none;"><script type="text/javascript">
+(function(w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter10183702 = new Ya.Metrika({id:10183702, enableAll: true, webvisor:true,params:window.yaParams||{ }});
+        }
+        catch(e) { }
+    });
+})(window, "yandex_metrika_callbacks");
+</script></div>
+<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
+<noscript><div><img src="//mc.yandex.ru/watch/10183702" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 {/literal}
 {hook run='body_begin'}
 <div id="container">

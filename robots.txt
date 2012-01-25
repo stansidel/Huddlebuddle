@@ -1,0 +1,53 @@
+User-agent: *
+Disallow: /rss
+Disallow: /people
+Disallow: /blogs
+Disallow: /tags
+Disallow: /top
+Disallow: /comments
+Disallow: /talk
+Disallow: /search
+Disallow: /classes
+Disallow: /config
+Disallow: /include
+Disallow: /templates
+Disallow: /uploads
+Disallow: /logs
+Disallow: /registration
+Disallow: /login
+Disallow: /profile
+Disallow: /my
+Disallow: /*?*
+Disallow: /*?
+ 
+User-agent: yandex
+Disallow: /rss
+Disallow: /people
+Disallow: /blogs
+Disallow: /tags
+Disallow: /top
+Disallow: /comments
+Disallow: /talk
+Disallow: /search
+Disallow: /classes
+Disallow: /config
+Disallow: /include
+Disallow: /templates
+Disallow: /uploads
+Disallow: /logs
+Disallow: /registration
+Disallow: /login
+Disallow: /profile
+Disallow: /my
+Disallow: /*?*
+Disallow: /*?
+ Host: вашсайт.ru
+  
+User-agent: Googlebot-Image
+ Disallow:
+ Allow: /*
+
+
+User-agent: YandexBlog
+ Disallow:
+ Allow: /*

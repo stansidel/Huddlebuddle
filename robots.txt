@@ -17,8 +17,6 @@ Disallow: /registration
 Disallow: /login
 Disallow: /profile
 Disallow: /my
-Disallow: /*?*
-Disallow: /*?
  
 User-agent: yandex
 Disallow: /rss
@@ -39,9 +37,7 @@ Disallow: /registration
 Disallow: /login
 Disallow: /profile
 Disallow: /my
-Disallow: /*?*
-Disallow: /*?
- Host: вашсайт.ru
+Host: huddlebuddle.org
   
 User-agent: Googlebot-Image
  Disallow:

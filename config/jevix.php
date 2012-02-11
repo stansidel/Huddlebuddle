@@ -6,7 +6,7 @@ return array(
 		'cfgAllowTags' => array(
 			// вызов метода с параметрами
 			array(
-				array('ls','cut','a', 'img', 'i', 'b', 'u', 's', 'video', 'em',  'strong', 'nobr', 'li', 'ol', 'ul', 'sup', 'abbr', 'sub', 'acronym', 'h4', 'h5', 'h6', 'br', 'hr', 'pre', 'code', 'object', 'param', 'embed', 'blockquote', 'iframe', 'source'),
+				array('ls','cut','a', 'img', 'i', 'b', 'u', 's', 'video', 'em',  'strong', 'nobr', 'li', 'ol', 'ul', 'sup', 'abbr', 'sub', 'acronym', 'h4', 'h5', 'h6', 'br', 'hr', 'pre', 'code', 'object', 'param', 'embed', 'blockquote', 'iframe', 'source', 'table', 'tr', 'td', 'th'),
 			),			
 		),
 		// Коротие теги типа
@@ -124,7 +124,7 @@ return array(
 		// Не нужна авто-расстановка <br>
 		'cfgSetTagNoAutoBr' => array(
 			array(
-				array('ul','ol','object')
+				array('ul','ol','object','table','tr','td','th')
 			)
 		),
 		// Теги с обязательными параметрами

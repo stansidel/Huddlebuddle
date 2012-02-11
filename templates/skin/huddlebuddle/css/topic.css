@@ -18,6 +18,19 @@
 .topic .content img[align="left"] { margin: 4px 15px 10px 0; }
 .topic .content img.image-center { display: block; margin: 0 auto; }
 
+.topic .content table {
+	clear: both;
+	width: 100%;
+	margin: 1.5em 0;
+	border: 1px solid #CCC;
+}
+
+.topic .content table td, .topic .content table th {
+	padding: .3em;
+	border: 1px solid #CCC;
+	vertical-align: top;
+}
+
 /* Tags */
 .topic .tags { margin: 0 0 6px; padding-left: 13px; background: url(../images/tag.png) no-repeat 0 5px; zoom: 1; }
 .topic .tags li { display: inline; color: #777; }

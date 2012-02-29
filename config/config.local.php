@@ -27,9 +27,9 @@ $config['view']['keywords'] = 'it,blog';
 $config['view']['skin'] = 'huddlebuddle';
 $config['sys']['mail']['from_email'] = 'bigbrother@huddlebuddle.org';
 $config['sys']['mail']['from_name'] = 'Huddlebuddle Big Brother';
-$config['general']['close'] = true;
+$config['general']['close'] = false;
 $config['general']['reg']['activation'] = true;
-$config['general']['reg']['invite'] = true;
+$config['general']['reg']['invite'] = false;
 $config['lang']['current'] = 'english';
 $config['lang']['default'] = 'english';
 

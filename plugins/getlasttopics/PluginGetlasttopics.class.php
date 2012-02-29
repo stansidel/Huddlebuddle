@@ -13,7 +13,7 @@ if (!class_exists('Plugin')) {
 class PluginGetlasttopics extends Plugin {
 
     public $aInherits = array(
-    'action' => array('ActionRss'),
+        'action' => array('ActionRss'),
     );
 
     public function Activate() {

@@ -25,7 +25,10 @@ class PluginGetlasttopics_ActionRss extends PluginGetlasttopics_Inherit_ActionRs
     }
 
     protected function RegisterEvent() {
-        $this->AddEvent('login', 'RssLogin');
+        if (Config::Get('general.close') and Config::Get('plugin.getlasttopics.show_topics'))
+            $this->AddEvent('login', 'RssLogin');
+        else
+            parent::RegisterEvent();
     }
 
     protected function RssLogin() {
